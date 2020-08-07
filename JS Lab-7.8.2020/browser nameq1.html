@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Scrip</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="sec"></p>
+<p id="SI"></p>
+<p id="names"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Name is " + navigator.appName;
+
+document.getElementById("sec").innerHTML =
+"version is " + navigator.appVersion;
+
+
+// var p=window.prompt("enter principle");
+// var n=window.prompt("enter no of years");
+// var r=window.prompt("enter rate of intreset");
+// var intrest = p*n*r/100 ;
+// document.getElementById("sec").innerHTML = "simple interest is " + intrest ;
+
+
+var no =window.prompt("enter no of useres");
+var arr = [];
+var i;
+
+for(i=0; i<no; i++){
+    arr.push(prompt("Enter a name"));
+}
+
+arr.sort();
+document.getElementById("names").innerHTML = "sorted list is :" + arr.toString() ;
+
+
+
+</script>
+
+
+
+    
+</body>
+</html>
